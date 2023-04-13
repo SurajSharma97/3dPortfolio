@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+.about{
+    background-color: hsl(219, 48%, 8%);
+    min-height: 100vh;
+
+    display: flex;
+}
+.aboutContainer{
+    background-color: rgb(255,255,255);;
+    width:60%;
+    height: 70vh;
+    position: absolute;
+        right: 0;
+        display: flex;
+        justify-content: right;
+        box-sizing: border-box;
+        padding:2vmax;   
+}
+.aboutContainer>p{
+    font-family: "Roboto" sans-serif;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    line-height: 50px;
+    color:rgba(15, 15, 15, 0.925);
+    font-size: 1.5vmax;
+    width: 30%;
+}
+.aboutContainer2{
+    width: 60%;;
+    min-height: 80vh;
+    box-shadow: 0 0 15px rgba(0,0,0, 0.225);
+    position: absolute;
+    display: flex;
+    background-color: white;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 2vmax;
+transform: translateX(-100vw) translateY(-10%);
+    animation: aboutAnimation 1s ease-in forwards;
+}
+.aboutContainer2>div{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ padding: 1vmax;
+ color:rgba(17,17,17, 0.725);
+ box-sizing: border-box;
+}
+.aboutContainer2>div:first-child{
+    align-items: center;
+}
+.Avatar{
+    width:200px;
+    height: 200px;
+    transition: all 0.5s;
+    border-radius: 50%;
+}
+
+.Avatar:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0, 0.225)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes aboutAnimation {
+    
+    to{
+        transform: translateX(30%) translateY(-10%) rotateZ(360deg)
+    }
+}

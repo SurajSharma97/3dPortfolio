@@ -1,0 +1,80 @@
+.footer{
+overflow: hidden;
+position: relative;
+height: 20vh;
+    background-color: rgba(26,26,26);
+    padding: 2vmax;
+    display: grid;
+    /* margin-top: -200px; */
+    grid-template-columns: 1fr 200px;
+
+}
+.footer>div>h5{
+color:white;
+width: 120px;
+border-bottom: 1px solid white;
+width: 120px;
+padding: 10px 0;
+
+}
+.footer>div>p{
+    color: white;
+    padding:10px 0;
+}
+
+.footer>div>h6{
+    color:white;
+    /* font-size: 2rem; */
+    padding: 10px 0;
+}
+.footer >div:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+.footer > div >a{
+    font-size: 2.5vmax;
+    margin:5px;
+    color:white;
+    transition: all 0.3s ;
+}
+/* .footer>div>a>svg{
+    width: 4vmax;
+    height: 4vmax;
+} */
+
+.footer>div>a:nth-child(2):hover{
+    color:rgba(68,55,156)
+}
+.footer>div>a:nth-child(3):hover{
+    color:rgb(42, 121, 211)
+}
+.footer>div>a:nth-child(4):hover{
+    color:rgb(211, 42, 126)
+}
+.footer>div>a:nth-child(5):hover{
+    color:rgb(45, 42, 211)
+}
+
+.footerContactBtn{
+    background-color: white;
+    padding: 5px;
+    color: black;
+    width: 120px;
+    text-decoration: none;
+    border: 1px solid white;
+    display: block;
+    margin: 2vmax 0;
+    text-align: center;
+    transition:all 0.5s;
+}
+.footerContactBtn>p{
+    color: black;
+}
+.footerContactBtn:hover{
+    background-color: unset;
+}
+.footerContactBtn>p:hover{
+    color: white;
+}

@@ -1,0 +1,10 @@
+
+import mongoose from "mongoose";
+export const connectDatabase =()=>{
+    mongoose.connect(process.env.MONGO_URI).then((c)=>{
+        console.log(`mongodb connected to : ${c.connection.host}`);
+console.log("hello world");
+    }).catch((e)=>{
+        console.log(e);
+    });
+}

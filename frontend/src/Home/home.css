@@ -1,0 +1,241 @@
+/* .home{
+    height: 100vh;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@200;300;400&family=Roboto:ital,wght@0,300;0,400;1,500&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+.homeCanvas{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    /* background-color: black; */
+    position: absolute;
+    filter: blur(10px);
+}
+.homeCanvasContainer{
+    background-color: rgba(0,0,0,0.805);
+    width:100%;
+    z-index: 2;
+    position: relative;
+    height: 100vh;
+    /* color: #fff; */
+    display: flex;
+}
+.homeCanvasContainer>h1{
+position: absolute;
+left: 2%;
+top:20%;
+/* display: flex; */
+background-color: white;
+padding: 1vmax;
+text-align: center;
+font: 500 3vmax 'Josefin Sans',sans-serif;
+}
+
+.homeCanvasContainer>p{
+    transition:all 0.5s ease-in-out ;
+    color:rgb(36, 36, 36)
+}
+.homeCanvasContainer>h1>p:hover{
+    transform:scale(1.2);
+}
+
+.homeCanvasBox{
+    position:absolute;
+    top:50%;
+ 
+    right: 0%;
+    text-align: center;
+    transform: translate(0%,-50%);
+}
+
+.homeCanvasBox>h2{
+    font:700 4rem "Ubuntu Mono", "Roboto";
+    letter-spacing: 20px;
+    line-height: 130px;
+    color: white;
+}
+.homeCanvasContainer>a{
+background-color: white;
+transition:all 0.54s ease-in-out;
+color:rgb(0,0,0);
+font: 700 1rem "Ubuntu Mono", "Roboto";
+box-sizing: border-box;
+padding:2vmax 6vmax;
+text-decoration: none;
+position: absolute;
+align-items: center;
+justify-content: center;
+left: 50%;
+top:50%;
+transform: translate(-50%,-50%);
+border: 1px solid white;
+}
+.homeCanvasContainer>a:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color:white;
+}
+
+.homeScrollBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left:50%;
+    border-radius: 100%;
+    padding: 0.5vmax;
+    transform: translateY(-150%);
+    padding: 0.5vmax;
+    animation: scrollPop 0.5s ease-in-out infinite alternate;
+}
+.homeScrollBtn > svg{
+    font-size: 3vmax;
+    color:rgb(255,255,255);
+}
+
+.homeContainer{
+    background-color: white;
+    padding-top: 4vmax;
+    border-bottom: 200px solid white;
+    border-radius:  0px 0px 200px 200px;
+    z-index: 1;
+    position: relative;
+    /* border: 1px solid darkgreen; */
+}
+
+.homeContainer>h2{
+    text-align: center;
+    color:rgba(22,20,20,0.915);
+    padding:4vmax;
+
+}
+
+.homeSkill{
+    background-color: hsl(219, 48%, 8%);
+    height: 1500px;
+    padding: 200px;
+    box-sizing: border-box;
+    perspective: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow-x: hidden;
+    transform: TranslateY( -200px);
+    position: relative;
+}
+.homeSkill>h3{
+    text-align: center;
+    color: white;
+    margin-bottom: 4vamx;
+    font-size: 4vmax;
+
+}
+.homeCubeSkill{
+
+    width: 200px;
+    height: 200px;
+animation: cubeRotate 15s linear infinite alternate;
+transform-style: preserve-3d ;
+}
+.homeCubeSkillFaces{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    box-shadow:  0 0 10px rgb(0,1,0);
+    width:inherit;
+    height:inherit;
+    opacity: 0.8; 
+}
+
+.homeCubeSkillFaces>img{
+    width:inherit;
+    height:inherit;
+}
+.face1{
+    transform: translate3d(0,0,100px);
+}
+.face2{
+    transform: rotateY(180deg) translate3d(0,0,100px);
+}
+.face3{
+    transform: rotateY(-90deg) translate3d(0,0,100px);
+}
+.face4{
+    transform: rotateY(90deg) translate3d(0,0,100px);
+}
+.face5{
+    transform: rotateX(-90deg) translate3d(0,0,100px);
+}
+.face6{
+    transform: rotateX(90deg) translate3d(0,0,100px);
+}
+
+.cubeShadow{
+    width: 250px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.158);
+    border-radius: 50%;
+    animation: cubeShadow 1s ease-in-out infinite alternate;
+    filter: blur(3px);
+    }
+.homeSkillBox{
+    background-color: rgba(39, 46, 59, 0.788);
+    /* width: 80%; */
+    /* height: 10%; */
+    padding: 0 2vmax;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right:-300px;
+    animation-name : homeSkillBoxScrollAnimationOn ;
+    animation-duration: 1s ;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+.homeSkillBox>svg{
+    font-size: 3vmax;
+    padding: 1.5vmax 0.5vmax;
+    color: white;
+    transition: all 0.5s ;
+}
+.homeSkillBox>svg:hover{
+    transform: scale(2);
+}
+
+@keyframes cubeRotate{
+    to{
+        transform: rotateY(360deg) rotateX(480deg)  rotateZ(720deg);
+    }
+}
+
+@keyframes cubeShadow {
+    to {
+        transform: TranslateY(-10px) scale(1.2);
+    }
+
+}
+
+@keyframes homeSkillBoxScrollAnimationOn {
+ from{
+    right:-300px;
+ }   
+ to{
+    right:20px
+ }
+}
+@keyframes homeSkillBoxScrollAnimationOff {
+ from{
+    right:20px;
+ }   
+ to{
+    right:-300px
+ }
+}
+@keyframes scrollPop {
+    to{
+        transform: translateY(-200%);
+    }
+    
+}

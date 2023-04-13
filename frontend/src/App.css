@@ -1,0 +1,10 @@
+*{
+  margin: 0%;
+  padding: 0%;
+};
+
+
+*>.menuBurger{width:2vmax;
+  height:1.5vmax;
+  padding:0.8vmax;
+};
