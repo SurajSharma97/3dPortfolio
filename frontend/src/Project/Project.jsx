@@ -10,7 +10,7 @@ import { MdKeyboardBackspace } from 'react-icons/md';
 import {ProjectCard} from "../components/Project"
 
 
-const Project_Timeline = () => {
+const ProjectTimeline = () => {
     const { message, error, loading } = useSelector((state) => state.update)
     const {message:loginMessage} =useSelector((state)=>state.login)
     const { user } = useSelector((state) => state.user)
@@ -136,4 +136,4 @@ const Project_Timeline = () => {
     )
 }
 
-export default Project_Timeline
+export default ProjectTimeline;

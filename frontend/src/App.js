@@ -13,7 +13,7 @@ import {useEffect}  from 'react';
 import {getUser, loadUser}from "./actions/User.js" 
 import AdminPanel from './components/AdminPanel';
 import Timeline from './timeline/Timeline';
-import Project_Timeline from './Project/Project';
+import ProjectTimeline from './Project/Project';
 
 function App() {
   const dispatch = useDispatch();
@@ -41,7 +41,7 @@ const {loading,user} = useSelector(state=>state.user);
           <Route path='/admin/timeline' 
           element={isAuthenticated?<Timeline/> : <Login/>}/>
           <Route path='/admin/project' 
-          element={isAuthenticated?<Project_Timeline/> : <Login/>}/>
+          element={isAuthenticated?<ProjectTimeline/> : <Login/>}/>
 
         </Routes>
 

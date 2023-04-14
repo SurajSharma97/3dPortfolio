@@ -3,7 +3,6 @@
 
 import React from 'react'
 import Typography from "@mui/material/Typography"
-import profilePic from "../assets/profile pic.png"
 import "../styles/About.css"
 
 const About = ({about}) => {
@@ -23,9 +22,7 @@ const About = ({about}) => {
 
     <Typography > {about.title}</Typography>
     <Typography style={{
-      margin:"1vmax 0",
-
-    }}>{about.subtitle}</Typography>
+      margin:"1vmax 0"}}>{about.subtitle}</Typography>
         </div>
 
         <div> 
@@ -33,10 +30,8 @@ const About = ({about}) => {
             textAlign:"right",
             wordSpacing:"5px",
             letterSpacing:"5px",
-            lineHeight:"50px"
-
-
-          }}>{about.description}</Typography>  </div>
+            lineHeight:"50px",}}
+            >{about.description}</Typography>  </div>
       </div>
 
 

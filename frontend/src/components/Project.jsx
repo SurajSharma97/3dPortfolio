@@ -28,7 +28,7 @@ const deleteHandler=async(id)=>{
 
     return(
     <>
-    <a href={url} className="projectCard" target="blan k">
+    <a href={url} className="projectCard" /* target="_black" */>
       <div> 
         <img src={projectImage} alt="project1" />
         <Typography variant='h5'>{projectTitle}</Typography>
